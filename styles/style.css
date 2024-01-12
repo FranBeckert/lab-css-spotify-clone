@@ -1,8 +1,141 @@
-/*
-Colors:
+/* Colors:
 
 Text: 1A1A1A
 Green: #00B172
-White: #FFF
+White: #FFF */
 
-*/
+html {
+    font-family: sans-serif;
+}
+#header div {
+    display: flex;
+    /* just have 2 elements, so one left and oder right */
+    justify-content: space-between;
+    /* the height of the logo do not stretch */
+    align-items: center;
+    padding: 0 25px;
+}
+
+#header img {
+    width: 15%;
+}
+
+nav {
+    width: 300px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black;
+    /* position: fixed; */
+}
+
+/* section 1 */
+
+#section-1 {
+    background-image: url(../images/landing.jpg);
+    height:25rem;
+    background-position: center;
+    /* makes the whole picture fit */
+    background-size: cover; 
+
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-1 h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0;    
+}
+
+#section-1 p {
+    width: 45%;
+    font-size: 0.8rem;
+}
+
+/* section-2 */
+
+#section-2 h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.containers {
+    display: flex;
+}
+
+.individual-container img {
+    width: 25%;
+}
+
+.individual-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.individual-container p {
+    width: 80%;
+    text-align: center;    
+}
+
+.individual-container h3 {
+    margin: 3% 0 0 0;
+    color: #00B172;
+}
+
+/* that must be another better way to align this. they are not horizontally aligned*/
+.individual-container .image-2 {
+    padding-bottom: 5%;
+}
+
+.individual-container {
+    width: 81%;
+}
+
+
+/* section 3 */
+
+#section-3 {
+    background-color: #00B172;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding : 5% 8% 5% 7% ;
+
+}
+
+.spotify-icon {
+    width: 12%;
+    padding-right: 10%;
+}
+
+.app-image {
+    width: 35%;
+}
+
+/* the font-size I am not sure about, just work when the screen is small */
+#section-3 h2 {
+    /* font-size: 1.09rem; */
+    font-weight: lighter;
+    margin-bottom: 12%;    
+}
+
+.text h3 {
+    /* font-size: 1rem; */
+}
+
+.text p {
+    /* font-size: 0.7rem; */
+    width: 80%;
+}
