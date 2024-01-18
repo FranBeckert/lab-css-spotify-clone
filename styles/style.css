@@ -28,7 +28,10 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    width: 105%;
 }
+
   
 nav a {
     text-decoration: none;
@@ -85,7 +88,7 @@ nav a {
 
 .individual-container img {
     width: 25%;
-    height: 2.5rem;
+    height: 2rem;
 }
 
 .individual-container{
@@ -149,16 +152,55 @@ nav a {
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px)  {
-
     
+    #header img {
+        width: 13%;
+    }
+    nav {
+        width: 44%;
+    }
+    nav ul {       
+        width: 98%;
+    }
+    
+    .individual-container img {
+        height: 2.5rem;
+   }
+   .spotify-icon {
+    width: 11%;   
+    }
+
+    .app-image {
+     width: 25%;
+    }
+
+
   }
   
   @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  
-   
-  }
-  
-  @media screen and (min-width: 1440px) {
-   
 
+    nav a {
+        font-size: 0.9rem;
+        
+    }
+    .individual-container img {
+        height: 3rem;
+   }
+
+   #section-3 h3 {
+    font-size: 1.5rem;
   }
+
+  .text p {
+    font-size: 0.8rem;
+  }
+  .spotify-icon {
+    width: 10%;    
+  }
+
+  .app-image {
+      width: 21%;
+  }
+}
+  
+ 
