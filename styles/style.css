@@ -13,15 +13,15 @@ html {
     justify-content: space-between;
     /* the height of the logo do not stretch */
     align-items: center;
-    padding: 0 25px;
+    padding: 0 11px;
 }
 
 #header img {
-    width: 15%;
+    width: 22%;
 }
 
 nav {
-    width: 300px;
+    width: 60%;
 }
   
 nav ul {
@@ -33,6 +33,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
+    font-size: 0.7rem;
     /* position: fixed; */
 }
 
@@ -40,7 +41,7 @@ nav a {
 
 #section-1 {
     background-image: url(../images/landing.jpg);
-    height:25rem;
+    height:20rem;
     background-position: center;
     /* makes the whole picture fit */
     background-size: cover; 
@@ -52,22 +53,30 @@ nav a {
     align-items: center;
 }
 
+#section-1 div {
+    text-align: center;
+    width: 75%;
+}
+
 #section-1 h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 0;    
 }
 
-#section-1 p {
-    width: 45%;
+#section-1 p {    
     font-size: 0.8rem;
 }
 
 /* section-2 */
 
+#section-2{
+    padding: 2% 0;
+}
 #section-2 h2 {
     display: flex;
     justify-content: center;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
+    font-size: 1.1rem;
 }
 
 .containers {
@@ -76,6 +85,7 @@ nav a {
 
 .individual-container img {
     width: 25%;
+    height: 2.5rem;
 }
 
 .individual-container{
@@ -86,18 +96,17 @@ nav a {
 
 .individual-container p {
     width: 80%;
-    text-align: center;    
+    text-align: center;
+    font-size: 0.7rem;    
 }
 
 .individual-container h3 {
     margin: 3% 0 0 0;
     color: #00B172;
+    text-align: center;
+    font-size: 0.8rem;
 }
 
-/* that must be another better way to align this. they are not horizontally aligned*/
-.individual-container .image-2 {
-    padding-bottom: 5%;
-}
 
 .individual-container {
     width: 81%;
@@ -109,33 +118,47 @@ nav a {
 #section-3 {
     background-color: #00B172;
     color: #fff;
-    display: flex;
-    align-items: center;
     padding : 5% 8% 5% 7% ;
-
 }
 
-.spotify-icon {
-    width: 12%;
-    padding-right: 10%;
-}
-
-.app-image {
-    width: 35%;
-}
-
-/* the font-size I am not sure about, just work when the screen is small */
 #section-3 h2 {
-    /* font-size: 1.09rem; */
     font-weight: lighter;
-    margin-bottom: 12%;    
+    font-size: 1rem;
 }
 
-.text h3 {
-    /* font-size: 1rem; */
+.texts-images {
+    display: inline-flex;
+}
+
+.texts {   
+    width: 40%;
 }
 
 .text p {
-    /* font-size: 0.7rem; */
-    width: 80%;
+    font-size: 0.6rem;
 }
+.spotify-icon {
+    width: 12%;
+    margin: auto;
+}
+
+.app-image {
+    width: 40%;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+
+    
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  
+   
+  }
+  
+  @media screen and (min-width: 1440px) {
+   
+
+  }
